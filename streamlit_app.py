@@ -2,4 +2,4 @@ import streamlit as st
 
 
 st.write('text')
-st.write('API key:'])
+st.write('API key:')
