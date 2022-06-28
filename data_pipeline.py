@@ -125,7 +125,7 @@ def update_db(curr, df):
     
     for i, row in df.iterrows():
         if check_if_video_exists(curr, row['video_id']):
-            update_row(curr, row['video_id'], row['video_title'],row['view_count'],row['like_count'],row['dislike_count'],row['comment_count'])
+            update_row(curr, row['video_id'], row['video_title'],row['view_count'],row['like_count'],row['comment_count'])
         else:
             tmp_df = tmp_df.append(row)
             
