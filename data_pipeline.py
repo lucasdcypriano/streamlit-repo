@@ -92,7 +92,7 @@ def insert_into_table(curr, video_id, video_title, video_date, view_count, like_
     
 
 #update row if video exists
-def update_row(curr, video_id, video_title, view_count, like_count, dislike_count, comment_count):
+def update_row(curr, video_id, video_title, view_count, like_count, comment_count, bizarre_stuff):
     query = ('''UPDATE videos
                 SET video_title = %s,
                     view_count = %s,
